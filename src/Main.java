@@ -52,7 +52,17 @@ public class Main {
         int nrFour = scan.nextInt();
         System.out.println("YOUR SPEED IS:");
         calculator.speedCalculator(nrOne,nrTwo,nrThree,nrFour);
+        System.out.println("**************************NEXT EXERCISE************************************");
+        System.out.println();
 
+        System.out.println("See if string is Equal.");
+        System.out.println("Please enter a text to compare with \"Barcelona\". ");
+        String myInputText = scan.nextLine();
+        logicalOprations.isTheSameString(myInputText);
+        System.out.println("**************************NEXT EXERCISE************************************");
+        System.out.println();
+
+        System.out.println("Compare THREE numbers and see the biggest.");
         System.out.println("Enter number one ");
         nrOne = scan.nextInt();
         System.out.println("Enter number two ");
@@ -60,9 +70,14 @@ public class Main {
         System.out.println("Enter number three ");
         nrThree = scan.nextInt();
         System.out.println("The biggest number is: " + logicalOprations.compareThreeNumbers(nrOne,nrTwo,nrThree));
+        System.out.println("**************************NEXT EXERCISE************************************");
+        System.out.println();
 
+        System.out.println("Check if age is eligible to vote.");
         System.out.println("Enter age one ");
         int age = scan.nextInt();
         System.out.println("Are you allowed to vote: " + logicalOprations.isEligibleToVote(age));
+        System.out.println("**************************NEXT EXERCISE************************************");
+        System.out.println();
     }
 }
